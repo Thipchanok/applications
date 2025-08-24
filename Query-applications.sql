@@ -144,7 +144,7 @@ INSERT INTO districts (district_id, province_id, district_name) VALUES
 (9601,96,'เมืองนราธิวาส'),(9602,96,'ตากใบ'),(9603,96,'บาเจาะ'),(9604,96,'ยี่งอ'),(9605,96,'ระแงะ'),(9606,96,'เจาะไอร้อง'),(9607,96,'สุคิริน'),(9608,96,'สุไหงโกลก'),(9609,96,'สุไหงปาดี'),(9610,96,'ตันหยงมัส');
 
 
--- Query : บันทุกข้อมูล
+-- Query : บันทึกข้อมูล
 INSERT INTO applications (title_id, first_name, last_name, phone_number, province_id, district_id, subdistrict_id, photo)
 VALUES 
 (1, 'สมชาย', 'ใจดี', '0846655555', 10, 1017, 101701, NULL),
@@ -196,6 +196,7 @@ JOIN titles b ON a.title_id = b.title_id
 JOIN provinces p ON a.province_id = p.province_id
 JOIN districts d ON a.district_id = d.district_id
 JOIN subdistricts s ON a.subdistrict_id = s.subdistrict_id;
+
 
 
 
